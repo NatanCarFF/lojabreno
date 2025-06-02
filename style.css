@@ -1,0 +1,210 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #6a0505; /* Um vermelho mais escuro, tipo brownie */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #6a0505;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Menu Section */
+.brownie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.brownie-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.brownie-item:hover {
+    transform: translateY(-5px);
+}
+
+.brownie-item img {
+    max-width: 100%;
+    height: 180px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.brownie-item h3 {
+    color: #444;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.brownie-item p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.brownie-item .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6a0505;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.brownie-item button {
+    background-color: #8B4513; /* Marrom chocolate */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.brownie-item button:hover {
+    background-color: #A0522D; /* Um tom mais claro ao passar o mouse */
+}
+
+/* Cart Section */
+#cart {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+#cart-items {
+    min-height: 80px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item .item-info {
+    flex-grow: 1;
+}
+
+.cart-item .item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item .item-quantity button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.cart-item .item-quantity button:hover {
+    background-color: #bbb;
+}
+
+.cart-item .remove-item {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.cart-item .remove-item:hover {
+    background-color: #c82333;
+}
+
+
+#cart-summary {
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #6a0505;
+    margin-top: 20px;
+}
+
+#checkout-button {
+    background-color: #28a745; /* Verde para o botão de finalizar */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#checkout-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #6a0505;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .brownie-grid {
+        grid-template-columns: 1fr;
+    }
+}

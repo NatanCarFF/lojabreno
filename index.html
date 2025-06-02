@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownies do Breno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Brownies do Breno</h1>
+        <p>Os melhores brownies artesanais da cidade!</p>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Nosso Cardápio</h2>
+            <div class="brownie-grid">
+                <div class="brownie-item">
+                    <img src="brownies.png" alt="Brownie Tradicional">
+                    <h3>Brownie Tradicional</h3>
+                    <p>Clássico e delicioso, com a receita original do Breno.</p>
+                    <span class="price">R$ 10,00</span>
+                    <button class="add-to-cart" data-id="1" data-name="Brownie Tradicional" data-price="10.00">Adicionar</button>
+                </div>
+
+                <div class="brownie-item">
+                    <img src="brownies.png" alt="Brownie Chocolate Branco">
+                    <h3>Brownie de Chocolate Branco</h3>
+                    <p>Irresistível, com pedaços cremosos de chocolate branco.</p>
+                    <span class="price">R$ 12,00</span>
+                    <button class="add-to-cart" data-id="2" data-name="Brownie de Chocolate Branco" data-price="12.00">Adicionar</button>
+                </div>
+
+                <div class="brownie-item">
+                    <img src="brownies.png" alt="Brownie Doce de Leite">
+                    <h3>Brownie de Doce de Leite</h3>
+                    <p>Uma combinação perfeita de brownie com a suavidade do doce de leite.</p>
+                    <span class="price">R$ 13,00</span>
+                    <button class="add-to-cart" data-id="3" data-name="Brownie de Doce de Leite" data-price="13.00">Adicionar</button>
+                </div>
+
+                <div class="brownie-item">
+                    <img src="brownies.png" alt="Brownie Leite Ninho">
+                    <h3>Brownie de Leite Ninho</h3>
+                    <p>Sabor da infância em cada mordida, com cobertura de Leite Ninho.</p>
+                    <span class="price">R$ 14,00</span>
+                    <button class="add-to-cart" data-id="4" data-name="Brownie de Leite Ninho" data-price="14.00">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Seu Pedido</h2>
+            <div id="cart-items">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+            <div id="cart-summary">
+                <p>Total: <span id="cart-total">R$ 0,00</span></p>
+                <button id="checkout-button">Finalizar Pedido</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brownies do Breno. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
